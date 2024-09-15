@@ -83,4 +83,8 @@ body {
 }
 input[type=text]:focus {
     background-color: lightblue;
-  } /*detta påverkar bara första input-fältet. Varför??/*
+  } /*detta påverkar bara första input-fältet. Varför??*/
+
+.checkbox {
+    cursor: pointer;
+}
