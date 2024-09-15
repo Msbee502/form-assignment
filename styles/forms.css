@@ -20,7 +20,7 @@ body {
 }
 .form {
     box-sizing: border-box;
-    box-shadow: 0px 0px 5px 5px;
+    box-shadow: 5px 5px 5px 5px;
     width: 594px;
 	height: 954px;
     padding: 10px;   
@@ -39,9 +39,10 @@ body {
     font-weight: regular;
     font-size: 16px;
     background-color: rgb(208, 205, 205);
-    border-width: 5px; 
+    /*border-width: 5px; 
     border-color: #E5E5E5;
-    inset: 10px;  /*detta funkar inte, får ingen border på dessa rutor varför?*/
+    inset: 10px;  detta funkar inte, får ingen border på dessa rutor varför? Däremot får jag en border på "topic"??
+    Jag kan inte göra några ändringar på the labels längre. Ändringarna kommer bara på topic.*/
     
 }
 .select-topic {
@@ -72,8 +73,14 @@ body {
     inset: 10px;
 }
 .topic {
-    margin-left: 2px;
-    background-color:rgb(208, 205, 205);
+    font-family: "poppins", sans-serif;
+    font-weight: regular;
+    font-size: 16px;
+    background-color:#f2bae7;
     border: none;
     cursor: pointer;
+    /*får inte bort den tunna svarta ramen runt rutan trots ovan kommando*/
 }
+input[type=text]:focus {
+    background-color: lightblue;
+  } /*detta påverkar bara första input-fältet. Varför??/*
