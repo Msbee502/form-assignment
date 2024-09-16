@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/forms.css">
+    <link rel="stylesheet" href="reset/forms.css">
     <title>Document</title>
 </head>
 <body>
@@ -25,20 +26,20 @@
                         <option value="returns">Returns</option>
                         <option value="orders">Orders</option>
                         <option value="other">Other</option>
-                    </select>             
+                    </select>                 
                     <br>      
                 <label for="Your message" class="label">Your message</label>
                     <textarea name="Your message" class="input" cols="10" rows="5" placeholder="Type our message"></textarea><br>
-                <label class="checkbox">
+                <div>
+                    <label class="checkbox">
                     <input type="checkbox" checked> 
-                        I'd like to receive newsletter
-                        <br><br>
+                    I'd like to receive newsletter
+                    <br><br>
+                </div> <!--why does it say that the tag is not paired?-->
                 <input type="button" value="Send message" class="btn">
-            </form>
+            </form> 
         </div>
 
-        <div class="form-image-yellow"></div>
-
-    </main>
+       </main>
 </body>
 </html>

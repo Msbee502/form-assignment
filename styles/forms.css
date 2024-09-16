@@ -2,7 +2,6 @@ body {
     background-color: #E5E5E5;
     margin: 0;
 }
-
 .background {
     display: flex;
     justify-content: center;
@@ -42,9 +41,9 @@ body {
     /*border-width: 5px; 
     border-color: #E5E5E5;
     inset: 10px;  detta funkar inte, får ingen border på dessa rutor varför? Däremot får jag en border på "topic"??
-    Jag kan inte göra några ändringar på the labels längre. Ändringarna kommer bara på topic.*/
-    
+    Jag kan inte göra några ändringar på the labels längre. Ändringarna kommer bara på topic.*/    
 }
+
 .select-topic {
     display: flex;
     flex-direction: row;
@@ -72,6 +71,10 @@ body {
     border-color: rgb(212, 10, 128);
     inset: 10px;
 }
+input[type=text]:focus {
+    background-color: lightblue;
+  } /*detta påverkar bara första input-fältet. Varför??*/
+
 .topic {
     font-family: "poppins", sans-serif;
     font-weight: regular;
@@ -79,12 +82,7 @@ body {
     background-color:#f2bae7;
     border: none;
     cursor: pointer;
-    /*får inte bort den tunna svarta ramen runt rutan trots ovan kommando*/
 }
-input[type=text]:focus {
-    background-color: lightblue;
-  } /*detta påverkar bara första input-fältet. Varför??*/
-
 .checkbox {
     cursor: pointer;
 }
