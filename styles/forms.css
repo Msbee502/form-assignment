@@ -69,7 +69,8 @@ body {
     background-color: #f2bae7;
     border-width: 4px;
     border-color: rgb(212, 10, 128);
-    inset: 10px;
+    inset: 10px; 
+    /*kan inte få en 3D-effekt på textarea trots att det också är class=input. Why? */
 }
 input[type=text]:focus {
     background-color: lightblue;
@@ -85,4 +86,6 @@ input[type=text]:focus {
 }
 .checkbox {
     cursor: pointer;
+    position: absolute;
+    opacity: 0;
 }
